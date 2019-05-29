@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bootstrap simple form constructor</title>
+</head>
+<body>
+
+<script src="bootstrap-simple-form.js"></script>
+<script>
+  const formSchemeExample = {
+    formControls: [
+      {
+        controlType: BootstrapSimpleForm.EControlType.colorPicker,
+        title: 'delicious',
+        label: 'Try me!',
+        help: 'true html5 color picker',
+        name: 'myColor',
+        columns: 3,
+        fullWidth: true,
+        value: '#00ff00',
+      },
+      {
+        controlType: BootstrapSimpleForm.EControlType.email,
+        title: 'email address',
+        label: 'Email address',
+        help: 'We\'ll never share your email with anyone else.',
+        placeholder: 'Enter email',
+        name: 'email',
+        columns: 6,
+        fullWidth: true,
+        value: 'some@valid.mail',
+      },
+      {
+        controlType: BootstrapSimpleForm.EControlType.date,
+        label: 'Enter date',
+        help: 'Just a common input with date pattern set',
+        name: 'date',
+        columns: 6,
+        fullWidth: true,
+      },
+      {
+        controlType: BootstrapSimpleForm.EControlType.input,
+        label: 'Can\'t edit me...',
+        name: 'filledInput',
+        columns: 6,
+        fullWidth: true,
+        value: '...i\'m already filled',
+        disabled: true
+      },
+      {
+        controlType: BootstrapSimpleForm.EControlType.checkbox,
+        label: 'Press me baka sempai',
+        columns: 3
+      },
+      {
+        controlType: BootstrapSimpleForm.EControlType.checkbox,
+        label: 'Can\'t touch this',
+        disabled: true,
+        value: true,
+        columns: 6
+      },
+      {
+        controlType: BootstrapSimpleForm.EControlType.select,
+        label: 'Select weekday',
+        options: ['', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'],
+        name: 'weekday',
+        columns: 6
+      },
+      {
+        controlType: BootstrapSimpleForm.EControlType.textarea,
+        label: 'Type some message',
+        placeholder: '...',
+        name: 'message',
+        help: 'awesome helping message',
+        rows: 4,
+        required: true
+      },
+      {
+        controlType: BootstrapSimpleForm.EControlType.radio,
+        label: 'Toggle my circles',
+        name: 'circleNumber',
+        help: 'who even told you i\'m radio?',
+        inline: true,
+        options: [
+          {
+            label: 'High',
+            value: '1',
+            disabled: true,
+
+          },
+          {
+            label: 'Medium',
+            value: null,
+          },
+          {
+            label: 'Low',
+            value: '3'
+          }
+        ]
+      }
+    ]
+  };
+  new BootstrapSimpleForm(formSchemeExample);
+</script>
+
+</body>
+</html>
