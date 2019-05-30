@@ -1,0 +1,26 @@
+{
+  "name": "bootstrap-simple-form",
+  "version": "1.0.0",
+  "description": "Simple form constructor made with bootstrap and html5 controls",
+  "main": "bootstrap-simple-form.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kgaregin/bootstrap-simple-form.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "simple",
+    "form",
+    "constructor",
+    "scheme"
+  ],
+  "author": "HBOgre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kgaregin/bootstrap-simple-form/issues"
+  },
+  "homepage": "https://github.com/kgaregin/bootstrap-simple-form#readme"
+}
